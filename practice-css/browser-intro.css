@@ -1,14 +1,7 @@
-h1 + p {
+p.info {
 	font-size: small;
 	color: navy;
 	background-color: #dfdfdf;
-}
-
-
-
-
-p.info {
-	font-size: 10pt;
 }
 
 div#zentai {
@@ -33,14 +26,13 @@ img.sign {
     margin: 10px 0 10px 10px;
 }
 
-body + p {
-	background-color:white;
+h1{
+	color:white;
 	text-shadow: 1px 1px 2px navy;
 }
 h2{
-	border: solid 1px black;
-	margin: 5px;
+	/*margin: 5px;*/
 	font-family:cursive;
-	color:3f3faf;
-	background-color:linear-gradient(to left, white, #ffefaf);;
+	color:#3f3faf;
+	background-color:linear-gradient(to left, white, #ffefaf);
 }
