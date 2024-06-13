@@ -1,7 +1,66 @@
+body{
+    background-color:rgba(151, 234, 255, 0.9);
+}
+
 h1{
     color:black;
     text-shadow: 1px 1px 2px navy;
+    background-color: #fff7d9;
 }
 h2{
     color:navy;
+    border-bottom: 5px dotted navy;
+    
 }
+/*初め数字箇条書き*/
+ol {
+    
+    counter-reset:number; /*数字をリセット*/
+    list-style-type: none!important; /*数字を一旦消す*/
+    padding:0.5em;
+    border: dashed 1px gray;
+    background-color:white;
+  }
+  
+  ol li {
+    
+    position: relative;
+    line-height: 1.5em;
+    padding: 0.5em 0.5em 0.5em 30px;
+  }
+  
+  ol li:before{
+    /* 以下数字をつける */
+    position: absolute;
+    counter-increment: number;
+    content: counter(number);
+    /*数字のデザイン変える*/
+    display:inline-block;
+    background: navy;
+    color: white;
+    font-family: 'Avenir','Arial Black','Arial',sans-serif;
+    font-weight:bold;
+    font-size: 15px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    /*以下上下中央寄せのため*/
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+/*終わり数字箇条書き*/  
+
+a:link {
+    color: blue;
+  }
+  
+  a:visited {
+    color: blueviolet;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
