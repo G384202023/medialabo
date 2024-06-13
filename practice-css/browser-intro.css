@@ -42,7 +42,7 @@ h1 {
 	background-color:white;
 	text-shadow: 1px 1px 2px navy;
 }
-ul.a{
+ul a{
 	font-family:cursive;
 	color:3f3faf;
 	background-color:linear-gradient(to left, white, #ffefaf);;
