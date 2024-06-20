@@ -201,6 +201,6 @@ let data = {
 
 /////////////////////////////////////////////////課題3-2 ここからプログラムを書こう
 
-console.log(data.shop.access);
+console.log(data.results.shop.access);
 
 
