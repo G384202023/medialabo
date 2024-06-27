@@ -24,13 +24,13 @@ h2.insertAdjacentElement('afterend', p);
 div = document.querySelector('div#phototable');
 
 let photo1= document.createElement('a');
-photo1.setAttribute('img', 'taro.png');
+photo1.setAttribute('src', 'taro.png');
 
 let photo2= document.createElement('a');
-photo2.setAttribute('img', 'jiro.png');
+photo2.setAttribute('src', 'jiro.png');
 
 let photo3= document.createElement('a');
-photo3.setAttribute('img', 'hanako.png');
+photo3.setAttribute('src', 'hanako.png');
 
 div.insertAdjacentElement('beforeend', photo1);
 div.insertAdjacentElement('beforeend', photo2);
