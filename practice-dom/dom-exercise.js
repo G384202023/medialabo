@@ -46,3 +46,5 @@ div.insertAdjacentElement('beforeend', p3);
 
 
 // 練習4-5 箇条書き追加プログラム
+let w = document.querySelector('ul#location'); 
+w.remove();
