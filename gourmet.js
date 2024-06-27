@@ -1,4 +1,4 @@
-let data = {
+/*let data = {
   "results": {
     "api_version": "1.26",
     "results_available": 52,
@@ -190,7 +190,7 @@ let data = {
     ]
   }
 };
-
+*/
 /////////////////////////////////////////////////課題3-2 ここからプログラムを書こう
 
 let hazime = document.querySelector('div#result');
