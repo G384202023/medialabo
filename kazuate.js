@@ -27,15 +27,20 @@ function hantei() {
   let squad = document.querySelector('span#answer');
   squad.textContent = yoso;
     if(kaisu>=4){
-        console.log('答えは ' + kotae + ' でした．すでにゲームは終わっています');
+        let result = document.querySelector('span#result');
+        result.textContent ='答えは ' + kotae + ' でした．すでにゲームは終わっています';
     }else if(kotae===4){
-        console.log('正解です．おめでとう!');
+        let result = document.querySelector('span#result');
+        result.textContent ='正解です．おめでとう!';
     }else if(kaisu===3){
-        console.log('まちがい．残念でした答えは' + kotae + 'です．');
+        let result = document.querySelector('span#result');
+        result.textContent ='まちがい．残念でした答えは' + kotae + 'です．';
     }else if(kaisu<=2 && yoso<kotae){
-        console.log('まちがい．答えはもっと大きいですよ');
+        let result = document.querySelector('span#result');
+        result.textContent ='まちがい．答えはもっと大きいですよ';
     }else if(kaisu<=2 && yoso>kotae){
-        console.log('まちがい．答えはもっと小さいですよ');
+        let result = document.querySelector('span#result');
+        result.textContent ='まちがい．答えはもっと小さいですよ';
     }
   kaisu++;
   // 課題3-1: 正解判定する
