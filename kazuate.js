@@ -11,9 +11,6 @@ let kaisu = 1;
 
 ///////////////////////////代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 hantei();
-hantei();
-hantei();
-hantei();
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
