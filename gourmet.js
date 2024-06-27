@@ -203,5 +203,9 @@ let h2 = document.createElement('h2');
 h2.textContent = '検索結果1件目: バグダッドカフェ Bagdadcafe/モータウン MOTOWN';
 hazime.insertAdjacentElement('beforeend', h2);
 
+let p = document.createElement('p');
+p.textContent = 'アクセス: 京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。';
+h2.insertAdjacentElement('beforeend', p);
+
 
 
