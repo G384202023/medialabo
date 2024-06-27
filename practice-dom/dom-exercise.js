@@ -14,29 +14,28 @@ let data = [
 //// 注意: 以上は編集しないこと!
 
 // 練習4-2 メッセージ追加プログラム
+let h2 = document.querySelector('h2#ex42');
+p = document.createElement('p');
+p.textContent = '写真表と年の緯度経度のページです';
+p.style.textEmphasis = "sesame green";
+h2.insertAdjacentElement('afterend', p);
 
-	//// 注意: 以上は編集しないこと!
-	// 練習4-2 メッセージ追加プログラム
-	
-	//// 注意: 以上は編集しないこと!
-	// 練習4-2 メッセージ追加プログラム
-	//// 注意: 以上は編集しないこと!
-	// 練習4-2 メッセージ追加プログラム
-	//<h1>DOM プログラミング演習</h1><h2 id="ex42">練習4-2: 説明文の追加</h2><p style="text-emphasis: sesame green;">写真表と年の緯度経度のページです</p>
-	// 練習4-3 写真表作成プログラム
-	//<h2>練習4-3: 写真表を作る</h2><div id="phototable">
-	//	<p>
-	//</p>		<img src="taro.png">
-	//</img>		</></p>
-	//	<p>
-	//</p>		<img src="jiro.png">
-	//</img>		</></p>
-	//	<p>
-	//</p>		</></p>
-	//</div></>
+// 練習4-3 写真表作成プログラム
+div = document.querySelector('div#phototable');
 
-// 練習4-4 箇条書き削除プログラム
+photo1= document.createElement('a');
+photo1.setAttribute('img', 'taro.png');
+
+photo2= document.createElement('a');
+photo2.setAttribute('img', 'jiro.png');
+
+photo3= document.createElement('a');
+photo3.setAttribute('img', 'hanako.png');
+
+div.insertAdjacentElement('beforeend', photo1);
+div.insertAdjacentElement('beforeend', photo2);
+div.insertAdjacentElement('beforeend', photo3);
+
 
 
 // 練習4-5 箇条書き追加プログラム
-
