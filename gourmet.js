@@ -193,6 +193,15 @@ let data = {
 
 /////////////////////////////////////////////////課題3-2 ここからプログラムを書こう
 
-console.log(data.results.shop[0].access);
+let hazime = document.querySelector('div#result');
+
+let h1 = document.createElement('h1');
+h1.textContent = 'グルメ情報(検索結果:2件)';
+hazime.insertAdjacentElement('beforeend', h1);
+
+let h2 = document.createElement('h2');
+h2.textContent = '検索結果1件目: バグダッドカフェ Bagdadcafe/モータウン MOTOWN';
+hazime.insertAdjacentElement('beforeend', h2);
+
 
 
