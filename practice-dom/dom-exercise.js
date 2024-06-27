@@ -46,9 +46,12 @@ div.insertAdjacentElement('beforeend', p3);
 
 
 // 練習4-5 箇条書き追加プログラム
-let w = document.querySelector('ul#location'); 
-w.remove();
+/*let w = document.querySelector('ul#location'); 
+w.li.remove();
 
+let itiran = document.querySelector('ul#location');
 for(let n of data){
 	console.log(data.name + " ... 緯度:" + data.lat + ", 経度:" + data.lng);
 }
+h2.insertAdjacentElement('afterend', itiran);
+*/
