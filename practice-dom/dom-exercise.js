@@ -23,13 +23,13 @@ h2.insertAdjacentElement('afterend', p);
 // 練習4-3 写真表作成プログラム
 div = document.querySelector('div#phototable');
 
-let photo1= document.createElement('a');
+let photo1= document.createElement('img');
 photo1.setAttribute('src', 'taro.png');
 
-let photo2= document.createElement('a');
+let photo2= document.createElement('img');
 photo2.setAttribute('src', 'jiro.png');
 
-let photo3= document.createElement('a');
+let photo3= document.createElement('img');
 photo3.setAttribute('src', 'hanako.png');
 
 div.insertAdjacentElement('beforeend', photo1);
