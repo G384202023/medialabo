@@ -230,7 +230,7 @@ hazime.insertAdjacentElement('beforeend', p17);
 hazime.insertAdjacentElement('beforeend', p18);
 
 let h22 = document.createElement('h2');
-h2.textContent = '検索結果2件目: 隠れ家バル Funny&Bouquet';
+h22.textContent = '検索結果2件目: 隠れ家バル Funny&Bouquet';
 hazime.insertAdjacentElement('beforeend', h22);
 
 let p21 = document.createElement('p');
