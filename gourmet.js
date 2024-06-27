@@ -199,27 +199,65 @@ let h1 = document.createElement('h1');
 h1.textContent = 'グルメ情報(検索結果:2件)';
 hazime.insertAdjacentElement('beforeend', h1);
 
-let h2 = document.createElement('h2');
-h2.textContent = '検索結果1件目: バグダッドカフェ Bagdadcafe/モータウン MOTOWN';
-hazime.insertAdjacentElement('beforeend', h2);
+let h21 = document.createElement('h2');
+h21.textContent = '検索結果1件目: バグダッドカフェ Bagdadcafe/モータウン MOTOWN';
+hazime.insertAdjacentElement('beforeend', h21);
 
-let p1 = document.createElement('p');
-p1.textContent = 'アクセス: 京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。';
-let p2 = document.createElement('p');
-p2.textContent = '住所: 東京都八王子市明神町４-6-12 ホテル・ザ・ビー八王子（旧八王子プラザホテル）2F';
-let p3 = document.createElement('p');
-p3.textContent = '予算: 3001～4000円';
-let p4 = document.createElement('p');
-p4.textContent = 'キャッチコピー: 【サプライズ演出有】 結婚パーティー受付中<';
-let p5 = document.createElement('p');
-p5.textContent = 'ジャンル: 居酒屋';
+let p11 = document.createElement('p');
+p11.textContent = 'アクセス: 京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。';
+let p12 = document.createElement('p');
+p12.textContent = '住所: 東京都八王子市明神町４-6-12 ホテル・ザ・ビー八王子（旧八王子プラザホテル）2F';
+let p13 = document.createElement('p');
+p13.textContent = '予算: 3001～4000円';
+let p14 = document.createElement('p');
+p14.textContent = 'キャッチコピー: 【サプライズ演出有】 結婚パーティー受付中';
+let p15 = document.createElement('p');
+p15.textContent = 'ジャンル: 居酒屋';
+let p16 = document.createElement('p');
+p16.textContent = '営業時間: 月～日、祝日、祝前日: 17:00～21:00 （料理L.O. 20:00 ドリンクL.O. 20:00）';
+let p17 = document.createElement('p');
+p17.textContent = '最寄駅: 京王線八王子駅';
+let p18 = document.createElement('p');
+p18.textContent = 'サブジャンル: ダイニングバー・バル';
 
-hazime.insertAdjacentElement('beforeend', p1);
-hazime.insertAdjacentElement('beforeend', p2);
-hazime.insertAdjacentElement('beforeend', p3);
-hazime.insertAdjacentElement('beforeend', p4);
-hazime.insertAdjacentElement('beforeend', p5);
+hazime.insertAdjacentElement('beforeend', p11);
+hazime.insertAdjacentElement('beforeend', p12);
+hazime.insertAdjacentElement('beforeend', p13);
+hazime.insertAdjacentElement('beforeend', p14);
+hazime.insertAdjacentElement('beforeend', p15);
+hazime.insertAdjacentElement('beforeend', p16);
+hazime.insertAdjacentElement('beforeend', p17);
+hazime.insertAdjacentElement('beforeend', p18);
 
+let h22 = document.createElement('h2');
+h2.textContent = '検索結果2件目: 隠れ家バル Funny&Bouquet';
+hazime.insertAdjacentElement('beforeend', h22);
+
+let p21 = document.createElement('p');
+p21.textContent = 'アクセス: JR八王子駅北口徒歩1分/京王八王子駅徒歩3分';
+let p22 = document.createElement('p');
+p22.textContent = '住所: 東京都八王子市東町12-14';
+let p23 = document.createElement('p');
+p23.textContent = '予算: 2001～3000円';
+let p24 = document.createElement('p');
+p24.textContent = 'キャッチコピー: 2.5時間飲み放題付2000円~ 【★少人数様ソファー★】';
+let p25 = document.createElement('p');
+p25.textContent = 'ジャンル: 居酒屋';
+let p26 = document.createElement('p');
+p26.textContent = '営業時間: 月～日、祝日、祝前日: 17:00～翌5:00 （料理L.O. 翌3:00 ドリンクL.O. 翌4:00）';
+let p27 = document.createElement('p');
+p27.textContent = '最寄駅: 八王子駅';
+let p28 = document.createElement('p');
+p28.textContent = 'サブジャンル: ダイニングバー・バル';
+
+hazime.insertAdjacentElement('beforeend', p21);
+hazime.insertAdjacentElement('beforeend', p22);
+hazime.insertAdjacentElement('beforeend', p23);
+hazime.insertAdjacentElement('beforeend', p24);
+hazime.insertAdjacentElement('beforeend', p25);
+hazime.insertAdjacentElement('beforeend', p26);
+hazime.insertAdjacentElement('beforeend', p27);
+hazime.insertAdjacentElement('beforeend', p28);
 
 
 
