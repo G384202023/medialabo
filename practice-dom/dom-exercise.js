@@ -26,18 +26,18 @@ div = document.querySelector('div#phototable');
 let photo1= document.createElement('img');
 photo1.setAttribute('src', 'taro.png');
 let p1 = document.createElement('p');
-p1.appendChild(img);
+p1.insertAdjacentElement('beforeend', photo1);
 
 
 let photo2= document.createElement('img');
 photo2.setAttribute('src', 'jiro.png');
 let p2 = document.createElement('p');
-p2.appendChild(img);
+p2.insertAdjacentElement('beforeend', photo2);
 
 let photo3= document.createElement('img');
 photo3.setAttribute('src', 'hanako.png');
 let p3 = document.createElement('p');
-p3.appendChild(img);
+p3.insertAdjacentElement('beforeend', photo3);
 
 div.insertAdjacentElement('beforeend', p1);
 div.insertAdjacentElement('beforeend', p2);
