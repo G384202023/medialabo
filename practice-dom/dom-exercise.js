@@ -56,7 +56,7 @@ n.remove();
 
 let itiran = document.querySelector('ul#location');
 for(let n of data){
-	console.log(data.name + " ... 緯度:" + data.lat + ", 経度:" + data.lng);
-	n++;
+	let li = document.createElement('li');
+	li = n.name + " ... 緯度:" + n.lat + ", 経度:" + n.lng;
+	itiran.insertAdjacentElement('beforeend', );
 }
-ul.insertAdjacentElement('afterend', itiran);
