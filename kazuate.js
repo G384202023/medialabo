@@ -27,19 +27,19 @@ function hantei() {
   let squad = document.querySelector('span#answer');
   squad.textContent = yoso;
     if(kaisu>=4){
-        let result = document.querySelector('span#result');
+        let result = document.querySelector('p#result');
         result.textContent ='答えは ' + kotae + ' でした．すでにゲームは終わっています';
     }else if(kotae===4){
-        let result = document.querySelector('span#result');
+        let result = document.querySelector('p#result');
         result.textContent ='正解です．おめでとう!';
     }else if(kaisu===3){
-        let result = document.querySelector('span#result');
+        let result = document.querySelector('p#result');
         result.textContent ='まちがい．残念でした答えは' + kotae + 'です．';
     }else if(kaisu<=2 && yoso<kotae){
-        let result = document.querySelector('span#result');
+        let result = document.querySelector('p#result');
         result.textContent ='まちがい．答えはもっと大きいですよ';
     }else if(kaisu<=2 && yoso>kotae){
-        let result = document.querySelector('span#result');
+        let result = document.querySelector('p#result');
         result.textContent ='まちがい．答えはもっと小さいですよ';
     }
   kaisu++;
