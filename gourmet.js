@@ -203,9 +203,23 @@ let h2 = document.createElement('h2');
 h2.textContent = '検索結果1件目: バグダッドカフェ Bagdadcafe/モータウン MOTOWN';
 hazime.insertAdjacentElement('beforeend', h2);
 
-let p = document.createElement('p');
-p.textContent = 'アクセス: 京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。';
-h2.insertAdjacentElement('beforeend', p);
+let p1 = document.createElement('p');
+p1.textContent = 'アクセス: 京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。';
+let p2 = document.createElement('p');
+p2.textContent = '住所: 東京都八王子市明神町４-6-12 ホテル・ザ・ビー八王子（旧八王子プラザホテル）2F';
+let p3 = document.createElement('p');
+p3.textContent = '予算: 3001～4000円';
+let p4 = document.createElement('p');
+p4.textContent = 'キャッチコピー: 【サプライズ演出有】 結婚パーティー受付中<';
+let p5 = document.createElement('p');
+p5.textContent = 'ジャンル: 居酒屋';
+
+hazime.insertAdjacentElement('beforeend', p1);
+hazime.insertAdjacentElement('beforeend', p2);
+hazime.insertAdjacentElement('beforeend', p3);
+hazime.insertAdjacentElement('beforeend', p4);
+hazime.insertAdjacentElement('beforeend', p5);
+
 
 
 
