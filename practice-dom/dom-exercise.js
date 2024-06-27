@@ -58,5 +58,5 @@ let itiran = document.querySelector('ul#location');
 for(let n of data){
 	let li = document.createElement('li');
 	li = n.name + " ... 緯度:" + n.lat + ", 経度:" + n.lng;
-	itiran.insertAdjacentElement('beforeend', li);
+	itiran.insertAdjacentElement('afterend', li);
 }
