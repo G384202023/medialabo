@@ -9,6 +9,9 @@ let yoso;
 
 /////////////////////将来以下の hantei(); の4回の呼び出しを全て削除する
 ///////////////////////////代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
+let sentou = document.querySelector('p#mae');
+sentou.textContent = '1から10の間の整数:';
+
 let c1 = document.querySelector('#kaitoubotton');
 c1.addEventListener('click', hantei);
 
@@ -21,8 +24,6 @@ function hantei() {
     let i = document.querySelector('input[name="kaitou"]');
     yoso = i.value;
   }
-  kaisu = document.querySelector('label#kaitou');
-  kaisu.textContent = "1kara10"
   let maru = document.querySelector('span#kaisu');
   maru.textContent = kaisu;
   let squad = document.querySelector('span#answer');
