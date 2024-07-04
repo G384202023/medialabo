@@ -18,12 +18,10 @@ c1.addEventListener('click', hantei);
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  let b = document.querySelector('#kaitoubotton');
-  b.addEventListener('click', ask);
-  function ask(){
+  
     let i = document.querySelector('input[name="kaitou"]');
     yoso = i.value;
-  }
+  
   let maru = document.querySelector('span#kaisu');
   maru.textContent = kaisu;
   let squad = document.querySelector('span#answer');
