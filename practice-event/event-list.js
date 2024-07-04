@@ -1,6 +1,6 @@
 // cell1: クリックすると色が変わる
 let c1 = document.querySelector('#cell1');
-c1.addEventListener('cick', changeColor);
+c1.addEventListener('click', changeColor);
 
 // cell2: ダブルクリックすると色が変わる
 let c2 = document.querySelector('#cell2');
