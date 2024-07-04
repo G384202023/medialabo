@@ -194,7 +194,9 @@
 */
 
 //////////////////////課題5-2、これでコンソールに反映される
-let c = document.querySelector('#kaitoubotton');
+//困ったらここの一番下見る↓
+///https://www.javadrive.jp/javascript/form/index4.html
+let c = document.querySelector('#searchbotton');
 c.addEventListener('click', show);
 function show(){
   let checkValue = genrekey.elements['genre'].value;
