@@ -198,7 +198,7 @@ let c = document.querySelector('#kaitoubotton');
 c.addEventListener('click', show);
 function show(){
   const genrekey = document.getElementById('genrekey');
-  CheckBtn.addEventListener('change', function () {
+  genrekey.addEventListener('change', function () {
   console.log(genrekey.group.value);
 });
 }
