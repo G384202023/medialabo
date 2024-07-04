@@ -28,20 +28,20 @@ function hantei() {
   let squad = document.querySelector('span#answer');
   squad.textContent = yoso;
     if(kaisu>=4){
-        let result = document.querySelector('p#result');
-        result.textContent ='答えは ' + kotae + ' でした．すでにゲームは終わっています';
+        let result1 = document.querySelector('p#result');
+        result1.textContent ='答えは ' + kotae + ' でした．すでにゲームは終わっています';
     }else if(kotae===4){
-        let result = document.querySelector('p#result');
-        result.textContent ='正解です．おめでとう!';
+        let result2 = document.querySelector('p#result');
+        result2.textContent ='正解です．おめでとう!';
     }else if(kaisu===3){
-        let result = document.querySelector('p#result');
-        result.textContent ='まちがい．残念でした答えは' + kotae + 'です．';
+        let result3 = document.querySelector('p#result');
+        result3.textContent ='まちがい．残念でした答えは' + kotae + 'です．';
     }else if(kaisu<=2 && yoso<kotae){
-        let result = document.querySelector('p#result');
-        result.textContent ='まちがい．答えはもっと大きいですよ';
+        let result4 = document.querySelector('p#result');
+        result4.textContent ='まちがい．答えはもっと大きいですよ';
     }else if(kaisu<=2 && yoso>kotae){
-        let result = document.querySelector('p#result');
-        result.textContent ='まちがい．答えはもっと小さいですよ';
+        let result5 = document.querySelector('p#result');
+        result5.textContent ='まちがい．答えはもっと小さいですよ';
     }
   kaisu++;
   // 課題3-1: 正解判定する
