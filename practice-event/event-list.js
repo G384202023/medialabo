@@ -16,7 +16,7 @@ c4.addEventListener('mousemove', changeColor);
 
 // cell5: マウスポインタがここから離れると色が変わる
 let c5 = document.querySelector('#cell5');
-c5.addEventListener('moouseleave', changeColor);
+c5.addEventListener('mouseleave', changeColor);
 
 // cell6: フォーカスすると色が変わる
 let c6 = document.querySelector('#cell6');
