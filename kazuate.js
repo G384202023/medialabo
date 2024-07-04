@@ -21,9 +21,8 @@ function hantei() {
     let i = document.querySelector('input[name="kaitou"]');
     yoso = i.value;
   }
-
-  let kai = document.querySelector('label#kaitou');
-  kai.textContent = kaisu + '回目の予想:' + yoso;
+  kaisu = document.querySelector('label#kaitou');
+  kaisu.textContent = "1kara10"
   let maru = document.querySelector('span#kaisu');
   maru.textContent = kaisu;
   let squad = document.querySelector('span#answer');
