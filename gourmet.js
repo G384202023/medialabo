@@ -193,15 +193,16 @@
 };
 */
 
-//////////////////////課題5-2
+//////////////////////課題5-2、これでコンソールに反映される
 let c = document.querySelector('#kaitoubotton');
 c.addEventListener('click', show);
 function show(){
-  const genrekey = document.getElementById('genrekey');
-  genrekey.addEventListener('change', function () {
-  console.log(genrekey.group.value);
-});
+  let checkValue = genrekey.elements['genre'].value;
+  console.log('選択されているのは ' + checkValue + ' です');
 }
+let genrekey = document.getElementById('genrekey');
+genrekey.elements[1].checked = true;
+genrekey.addEventListener('change', show);
 /*let i = document.querySelector('input[form="genre"]');
 let genre = i.value;
 if(genre===G001){
