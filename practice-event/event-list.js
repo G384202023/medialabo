@@ -1,10 +1,10 @@
 // cell1: クリックすると色が変わる
 let c1 = document.querySelector('#cell1');
-c1.addEventListener('dblcick', changeColor);
+c1.addEventListener('cick', changeColor);
 
 // cell2: ダブルクリックすると色が変わる
 let c2 = document.querySelector('#cell2');
-c2.addEventListener('click', changeColor);
+c2.addEventListener('dblclick', changeColor);
 
 // cell3: マウスポインタが上に来ると色が変わる
 let c3 = document.querySelector('#cell3');
