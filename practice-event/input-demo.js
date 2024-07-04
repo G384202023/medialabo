@@ -9,3 +9,4 @@ function greeting() {
 	let shimei = i.value;
 	console.log('こんにちは! ' + shimei + ' さん');
 }
+

@@ -4,21 +4,26 @@ let kotae = Math.floor(Math.random()*10) + 1;
 
 ///////////////////////入力回数（予想回数）
 let kaisu = 1;
+let yoso;
 // 予想を4回実行する
 
 /////////////////////将来以下の hantei(); の4回の呼び出しを全て削除する
-
-
 ///////////////////////////代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
-hantei();
+let c1 = document.querySelector('#kaitoubotton');
+c1.addEventListener('click', hantei);
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  let yoso = 4;
+  let b = document.querySelector('#kaitoubotton');
+  b.addEventListener('click', ask);
+  function ask(){
+    let i = document.querySelector('input[name="kaitou"]');
+    yoso = i.value;
+  }
 
   
-  //console.log(kaisu + '回目の予想: 4');
+  console.log(kaisu + '回目の予想:' + yoso);
   let maru = document.querySelector('span#kaisu');
   maru.textContent = kaisu;
   let squad = document.querySelector('span#answer');
