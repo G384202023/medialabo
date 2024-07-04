@@ -7,6 +7,27 @@
     <script src="gourmet.js" defer></script>
   </head>
   <body>
+    <form id="genrekey">検索キー:
+      <input type="radio" name="genre" value="G001">居酒屋
+      <input type="radio" name="genre" value="G002">ダイニングバー・バル
+      <input type="radio" name="genre" value="G003">創作料理
+      <input type="radio" name="genre" value="G004">和食
+      <input type="radio" name="genre" value="G005">洋食
+      <input type="radio" name="genre" value="G006">イタリアン・フレンチ
+      <input type="radio" name="genre" value="G007">中華
+      <input type="radio" name="genre" value="G008">焼肉・ホルモン
+      <input type="radio" name="genre" value="G009">アジア・エスニック料理
+      <input type="radio" name="genre" value="G010">各国料理
+      <input type="radio" name="genre" value="G011">カラオケ・パーティ
+      <input type="radio" name="genre" value="G012">バー・カクテル
+      <input type="radio" name="genre" value="G013">ラーメン
+      <input type="radio" name="genre" value="G014">カフェ・スイーツ
+      <input type="radio" name="genre" value="G015">その他グルメ
+      <input type="radio" name="genre" value="G016">お好み焼き・もんじゃ
+      <input type="radio" name="genre" value="G017">韓国料理
+      <button type="button" id="kaitoubotton" onclick="show()">検索</button>
+    </form>
+    <p><span id="kensu"></span>件がヒットしました.</p>
     <div id="result"></div>
   </body>
 </html>

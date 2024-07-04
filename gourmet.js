@@ -1,4 +1,5 @@
 /*let data = {
+
   "results": {
     "api_version": "1.26",
     "results_available": 52,
@@ -191,6 +192,25 @@
   }
 };
 */
+
+//////////////////////課題5-2
+let c = document.querySelector('#kaitoubotton');
+c.addEventListener('click', show);
+function show(){
+  const genrekey = document.getElementById('genrekey');
+  CheckBtn.addEventListener('change', function () {
+  console.log(genrekey.group.value);
+});
+}
+/*let i = document.querySelector('input[form="genre"]');
+let genre = i.value;
+if(genre===G001){
+
+}
+let squad = document.querySelector('span#kensu');
+squad.textContent = 2;
+*/
+
 /////////////////////////////////////////////////課題3-2 ここからプログラムを書こう
 
 let hazime = document.querySelector('div#result');
