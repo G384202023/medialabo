@@ -220,6 +220,7 @@ b.addEventListener('click', sendRequest);
 
 // 通信を開始する処理
 function sendRequest() {
+  let input = document.querySelector('input');
   let url;
   switch(input.value){
     case "G001":
@@ -300,7 +301,8 @@ function showResult(resp) {
 
     /////////////////////////////////////////////////課題3-2 ここからプログラムを書こう
     
-    let hazime = document.querySelector('div#result');
+    
+    /*let hazime = document.querySelector('div#result');
     
     let h1 = document.createElement('h1');
     h1.textContent = 'グルメ情報(検索結果:2件)';
@@ -365,6 +367,7 @@ function showResult(resp) {
     hazime.insertAdjacentElement('beforeend', p26);
     hazime.insertAdjacentElement('beforeend', p27);
     hazime.insertAdjacentElement('beforeend', p28);
+    */
     }
 
 	// data をコンソールに出力
@@ -378,6 +381,10 @@ function showResult(resp) {
 function showError(err) {
 	console.log(err);
 }	
-///////////////////////////////////////////////6-2とか？
+
+// 通信の最後にいつも実行する処理
+function finish() {
+	console.log('Ajax 通信が終わりました');
+}
 
 
