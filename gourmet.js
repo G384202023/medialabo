@@ -191,9 +191,6 @@ let data = {
     ]
   }
 };
-
-print(data);
-function print(data){
 //////////////////////課題5-2、これでコンソールに反映される
 //困ったらここの一番下見る↓
 ///https://www.javadrive.jp/javascript/form/index4.html
@@ -214,6 +211,9 @@ if(genre===G001){
 let squad = document.querySelector('span#kensu');
 squad.textContent = 2;
 */
+print(data);
+function print(data){
+
 
 /////////////////////////////////////////////////課題3-2 ここからプログラムを書こう
 
