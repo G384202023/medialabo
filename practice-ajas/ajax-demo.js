@@ -9,9 +9,9 @@ function sendRequest() {
 
 	// 通信開始
 	axios.get(url)
-		.then(showResult)
-		.catch(showError)
-		.then(finish);
+		.then(showResult)  //通信成功
+		.catch(showError)  //失敗
+		.then(finish);     //通信の最後の処理
 }
 
 // 通信が成功した時の処理
