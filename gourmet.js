@@ -193,17 +193,25 @@
 };
 */
 //////////////////////課題5-2、これでコンソールに反映される
-//困ったらここの一番下見る↓
-///https://www.javadrive.jp/javascript/form/index4.html
-//let c = document.querySelector('#searchbotton');
-//c.addEventListener('click', show);
-let genrekey = document.getElementById('genrekey');
-function show(){
-  let checkValue = genrekey.elements['genre'].value;
-  document.write('選択されているのは ' + checkValue + ' です');
+
+// 1. イベントハンドラの登録
+
+let b = document.querySelector('#searchbotton');
+b.addEventListener('click', printAnswer);
+
+
+// 2. イベントハンドラの定義
+
+function printAnswer() {
+    // name 属性が year の input 要素をすべて検索
+    let rs = document.querySelectorAll('input[name="genre"]');
+    for (let r of rs) {
+        if (r.checked) {        // r が選択されていたら
+            console.log(r.value);
+        }
+    }
+
 }
-genrekey.elements[1].checked = true;
-genrekey.addEventListener('change', show);
 
 //////////////////////////////ajax
 let b = document.querySelector('#sendRequest');
