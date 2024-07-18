@@ -1,4 +1,4 @@
-let data = {
+/*let data = {
 
   "results": {
     "api_version": "1.26",
@@ -191,6 +191,7 @@ let data = {
     ]
   }
 };
+*/
 //////////////////////課題5-2、これでコンソールに反映される
 //困ったらここの一番下見る↓
 ///https://www.javadrive.jp/javascript/form/index4.html
@@ -211,6 +212,98 @@ if(genre===G001){
 let squad = document.querySelector('span#kensu');
 squad.textContent = 2;
 */
+//////////////////////////////ajax
+let b = document.querySelector('#sendRequest');
+b.addEventListener('click', sendRequest);
+
+
+// 通信を開始する処理
+function sendRequest() {
+  let url;
+  switch(checkValue){
+    case G001:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G001.json';
+      break;
+    case G002:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G002.json';
+      break;
+    case G003:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G003.json';
+      break;
+    case G004:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G004.json';
+      break;
+      case G005:
+        url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G005.json';
+        break;
+        case G006:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G006.json';
+      break;
+      case G007:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G007.json';
+      break;
+      case G008:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G008.json';
+      break;
+      case G009:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G009.json';
+      break;
+      case G010:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G010.json';
+      break;
+      case G011:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G011.json';
+      break;
+      case G012:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G012.json';
+      break;
+      case G013:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G013.json';
+      break;
+      case G014:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G014.json';
+      break;
+      case G015:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G015.json';
+      break;
+      case G016:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G016.json';
+      break;
+      case G017:
+      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G017.json';
+      break;
+  }
+    
+	
+
+	axios.get(url)
+		.then(showResult)  
+		.catch(showError)  
+		.then(finish);     
+}
+
+// 通信が成功した時の処理
+function showResult(resp) {
+	// サーバから送られてきたデータを出力
+	let data = resp.data;
+
+	// data が文字列型なら，オブジェクトに変換する
+	if (typeof data === 'string') {
+		data = JSON.parse(data);
+	}
+
+	// data をコンソールに出力
+	console.log(data);
+
+	// data.x を出力
+	console.log(data.x);
+}
+
+// 通信エラーが発生した時の処理
+function showError(err) {
+	console.log(err);
+}	
+///////////////////////////////////////////////6-2とか？
 print(data);
 function print(data){
 

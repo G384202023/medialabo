@@ -5,6 +5,7 @@ b.addEventListener('click', sendRequest);
 // 通信を開始する処理
 function sendRequest() {
 	// URL を設定
+	//1.検索キーのうち「他yん寝る」を取得
 	let url = 'https://www.nishita-lab.org/web-contents/jsons/test.json';
 
 	// 通信開始
