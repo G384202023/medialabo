@@ -195,23 +195,16 @@
 //////////////////////課題5-2、これでコンソールに反映される
 //困ったらここの一番下見る↓
 ///https://www.javadrive.jp/javascript/form/index4.html
-let c = document.querySelector('#searchbotton');
-c.addEventListener('click', show);
+//let c = document.querySelector('#searchbotton');
+//c.addEventListener('click', show);
+let genrekey = document.getElementById('genrekey');
 function show(){
   let checkValue = genrekey.elements['genre'].value;
   document.write('選択されているのは ' + checkValue + ' です');
 }
-let genrekey = document.getElementById('genrekey');
 genrekey.elements[1].checked = true;
 genrekey.addEventListener('change', show);
-/*let i = document.querySelector('input[form="genre"]');
-let genre = i.value;
-if(genre===G001){
 
-}
-let squad = document.querySelector('span#kensu');
-squad.textContent = 2;
-*/
 //////////////////////////////ajax
 let b = document.querySelector('#sendRequest');
 b.addEventListener('click', sendRequest);
