@@ -199,7 +199,7 @@ let c = document.querySelector('#searchbotton');
 c.addEventListener('click', show);
 function show(){
   let checkValue = genrekey.elements['genre'].value;
-  console.log('選択されているのは ' + checkValue + ' です');
+  document.write('選択されているのは ' + checkValue + ' です');
 }
 let genrekey = document.getElementById('genrekey');
 genrekey.elements[1].checked = true;
