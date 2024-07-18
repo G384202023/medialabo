@@ -1,4 +1,4 @@
-/*let data = {
+let data = {
 
   "results": {
     "api_version": "1.26",
@@ -191,8 +191,9 @@
     ]
   }
 };
-*/
 
+print(data);
+function print(data){
 //////////////////////課題5-2、これでコンソールに反映される
 //困ったらここの一番下見る↓
 ///https://www.javadrive.jp/javascript/form/index4.html
@@ -281,6 +282,6 @@ hazime.insertAdjacentElement('beforeend', p25);
 hazime.insertAdjacentElement('beforeend', p26);
 hazime.insertAdjacentElement('beforeend', p27);
 hazime.insertAdjacentElement('beforeend', p28);
-
+}
 
 
