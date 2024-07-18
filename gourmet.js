@@ -196,8 +196,8 @@
 
 // 1. イベントハンドラの登録
 
-let b = document.querySelector('#searchbotton');
-b.addEventListener('click', printAnswer);
+let se = document.querySelector('#searchbotton');
+se.addEventListener('click', printAnswer);
 
 
 // 2. イベントハンドラの定義
