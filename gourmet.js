@@ -208,75 +208,19 @@ function printAnswer() {
     for (let r of rs) {
         if (r.checked) {        // r が選択されていたら
             console.log(r.value);
+            sendRequest(r.value);
         }
     }
 
 }
 
-//////////////////////////////ajax
-let b = document.querySelector('#searchbotton');
-b.addEventListener('click', sendRequest);
+
 
 
 // 通信を開始する処理
-function sendRequest() {
+function sendRequest(key) {
   let input = document.querySelector('input');
-  let url;
-  switch(input.value){
-    case "G001":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G001.json';
-      break;
-    case "G002":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G002.json';
-      break;
-    case "G003":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G003.json';
-      break;
-    case "G004":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G004.json';
-      break;
-      case "G005":
-        url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G005.json';
-        break;
-        case "G006":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G006.json';
-      break;
-      case "G007":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G007.json';
-      break;
-      case "G008":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G008.json';
-      break;
-      case "G009":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G009.json';
-      break;
-      case "G010":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G010.json';
-      break;
-      case "G011":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G011.json';
-      break;
-      case "G012":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G012.json';
-      break;
-      case "G013":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G013.json';
-      break;
-      case "G014":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G014.json';
-      break;
-      case "G015":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G015.json';
-      break;
-      case "G016":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G016.json';
-      break;
-      case "G017":
-      url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G017.json';
-      break;
-  }
-    
-	
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+key + '.json';
 
 	axios.get(url)
 		.then(showResult)  
