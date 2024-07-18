@@ -249,30 +249,38 @@ function print(data){
     
     let hazime = document.querySelector('div#result');
     let h1 = document.createElement('h1');
-    h1.textContent = 'グルメ情報(検索結果:'+data.length+'件)';
-    for(let n of data){
+    h1.textContent = 'グルメ情報(検索結果:'+data.results.shop.length+'件)';
+    for(let n of data.results.shop){
     
     let h10 = document.createElement('h2');
-    h10.textContent = n+'件目: ' + data[n].name;
+    h10.textContent = n+'件目: ' + n.name;
     let p11 = document.createElement('p');
-    p11.textContent = 'アクセス: '+data[n].access;
+    p11.textContent = 'アクセス: '+n.access;
     let p12 = document.createElement('p');
-    p12.textContent = '住所: '+data[n].address;
+    p12.textContent = '住所: '+n.address;
     let p13 = document.createElement('p');
-    p13.textContent = '予算: '+data[n].average;
+    p13.textContent = '予算: '+n.average;
     let p14 = document.createElement('p');
-    p14.textContent = 'キャッチコピー: '+data[n].catch;
+    p14.textContent = 'キャッチコピー: '+n.catch;
     let p15 = document.createElement('p');
-    p15.textContent = 'ジャンル: '+data[n].;
+    p15.textContent = 'ジャンル: '+n.genre.name;
     let p16 = document.createElement('p');
-    p16.textContent = '営業時間: '+data[n].access;
+    p16.textContent = '営業時間: '+n.open;
     let p17 = document.createElement('p');
-    p17.textContent = '最寄駅: '+data[n].access;
+    p17.textContent = '最寄駅: '+n.station_name;
     let p18 = document.createElement('p');
-    p18.textContent = 'サブジャンル: '+data[n].access;
-    for(let nn of data){
-      hazime.insertAdjacentElement('beforeend', nn);//nn変えたい
-    }
+    p18.textContent = 'サブジャンル: '+n.sub_genre.name;
+
+    hazime.insertAdjacentElement('beforeend', h10);//nn変えたい
+    hazime.insertAdjacentElement('beforeend', p11);//nn変えたい
+    hazime.insertAdjacentElement('beforeend', p12);//nn変えたい
+    hazime.insertAdjacentElement('beforeend', p13);//nn変えたい
+    hazime.insertAdjacentElement('beforeend', p14);//nn変えたい
+    hazime.insertAdjacentElement('beforeend', p15);//nn変えたい
+    hazime.insertAdjacentElement('beforeend', p16);//nn変えたい
+    hazime.insertAdjacentElement('beforeend', p17);//nn変えたい
+    hazime.insertAdjacentElement('beforeend', p18);//nn変えたい
+    
     
     }
     
