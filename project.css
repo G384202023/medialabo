@@ -1,5 +1,13 @@
 body{
-    background-image:  url(29136945_s.jpg); 
+  /*文字見やすいように白透過背景*/
+  div#genrekey{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  div#result{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  background-image:  url(29136945_s.jpg); 
   /* 画像を常に天地左右の中央に配置 */
   background-position: center center;
    
@@ -11,4 +19,8 @@ body{
    
   /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
   background-size: cover;
+
+
+  
+
 }

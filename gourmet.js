@@ -270,7 +270,7 @@ function print(data){
     p17 = document.createElement('p');
     p18 = document.createElement('p');
 
-    h2.textContent = n.name;
+    h2.textContent = '☆'+n.name+'☆';
     hazime.insertAdjacentElement('beforeend', h2);
     p11.textContent = 'アクセス: '+n.access;
     hazime.insertAdjacentElement('beforeend', p11);
