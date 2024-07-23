@@ -194,6 +194,7 @@
 */
 //////////////////////課題5-2、これでコンソールに反映される
 
+
 // 1. イベントハンドラの登録
 
 let se = document.querySelector('button#searchbotton');
@@ -211,6 +212,7 @@ function printAnswer() {
             sendRequest(r.value);
         }
     }
+    
 
 }
 
@@ -230,8 +232,14 @@ function sendRequest(key) {
 
 // 通信が成功した時の処理
 function showResult(resp) {
-  if(もしすでに検索したものがあればそれを消したい){}////////////////////////////////////////
-	// サーバから送られてきたデータを出力
+  let h2 = document.querySelectorAll('h2');
+  let p = document.querySelectorAll('p');
+  for (let n of h2) {
+    n.remove();
+  }
+  for (let n of p) {
+    n.remove();
+  }
 	let data = resp.data;
 
 	// data が文字列型なら，オブジェクトに変換する
@@ -247,36 +255,40 @@ function print(data){
     let hazime = document.querySelector('div#result');
     let h1 = document.createElement('h1');
     h1.textContent = 'グルメ情報(検索結果:'+data.results.shop.length+'件)';
-    for(let n of data.results.shop){
     
-    let h10 = document.createElement('h2');
-    h10.textContent = n.name;
-    let p11 = document.createElement('p');
-    p11.textContent = 'アクセス: '+n.access;
-    let p12 = document.createElement('p');
-    p12.textContent = '住所: '+n.address;
-    let p13 = document.createElement('p');
-    p13.textContent = '予算: '+n.average;
-    let p14 = document.createElement('p');
-    p14.textContent = 'キャッチコピー: '+n.catch;
-    let p15 = document.createElement('p');
-    p15.textContent = 'ジャンル: '+n.genre.name;
-    let p16 = document.createElement('p');
-    p16.textContent = '営業時間: '+n.open;
-    let p17 = document.createElement('p');
-    p17.textContent = '最寄駅: '+n.station_name;
-    let p18 = document.createElement('p');
-    p18.textContent = 'サブジャンル: '+n.sub_genre.name;
 
-    hazime.insertAdjacentElement('beforeend', h10);
+
+    for(let n of data.results.shop){
+
+    h2 = document.createElement('h2');
+    p11 = document.createElement('p');
+    p12 = document.createElement('p');
+    p13 = document.createElement('p');
+    p14 = document.createElement('p');
+    p15 = document.createElement('p');
+    p16 = document.createElement('p');
+    p17 = document.createElement('p');
+    p18 = document.createElement('p');
+
+    h2.textContent = n.name;
+    hazime.insertAdjacentElement('beforeend', h2);
+    p11.textContent = 'アクセス: '+n.access;
     hazime.insertAdjacentElement('beforeend', p11);
+    p12.textContent = '住所: '+n.address;
     hazime.insertAdjacentElement('beforeend', p12);
+    p13.textContent = '予算: '+n.average;
     hazime.insertAdjacentElement('beforeend', p13);
+    p14.textContent = 'キャッチコピー: '+n.catch;
     hazime.insertAdjacentElement('beforeend', p14);
+    p15.textContent = 'ジャンル: '+n.genre.name;
     hazime.insertAdjacentElement('beforeend', p15);
+    p16.textContent = '営業時間: '+n.open;
     hazime.insertAdjacentElement('beforeend', p16);
+    p17.textContent = '最寄駅: '+n.station_name;
     hazime.insertAdjacentElement('beforeend', p17);
+    p18.textContent = 'サブジャンル: '+n.sub_genre.name;
     hazime.insertAdjacentElement('beforeend', p18);
+
     }
 }
 
