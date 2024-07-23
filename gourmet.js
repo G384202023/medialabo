@@ -230,6 +230,7 @@ function sendRequest(key) {
 
 // 通信が成功した時の処理
 function showResult(resp) {
+  if(もしすでに検索したものがあればそれを消したい){}////////////////////////////////////////
 	// サーバから送られてきたデータを出力
 	let data = resp.data;
 
@@ -241,19 +242,15 @@ function showResult(resp) {
   //if文の後ならこれは{}内ならどこでもいい
   print(data);
 }
+
 function print(data){
-
-
-    /////////////////////////////////////////////////課題3-2 ここからプログラムを書こう
-    
-    
     let hazime = document.querySelector('div#result');
     let h1 = document.createElement('h1');
     h1.textContent = 'グルメ情報(検索結果:'+data.results.shop.length+'件)';
     for(let n of data.results.shop){
     
     let h10 = document.createElement('h2');
-    h10.textContent = n+'件目: ' + n.name;
+    h10.textContent = n.name;
     let p11 = document.createElement('p');
     p11.textContent = 'アクセス: '+n.access;
     let p12 = document.createElement('p');
@@ -271,23 +268,17 @@ function print(data){
     let p18 = document.createElement('p');
     p18.textContent = 'サブジャンル: '+n.sub_genre.name;
 
-    hazime.insertAdjacentElement('beforeend', h10);//nn変えたい
-    hazime.insertAdjacentElement('beforeend', p11);//nn変えたい
-    hazime.insertAdjacentElement('beforeend', p12);//nn変えたい
-    hazime.insertAdjacentElement('beforeend', p13);//nn変えたい
-    hazime.insertAdjacentElement('beforeend', p14);//nn変えたい
-    hazime.insertAdjacentElement('beforeend', p15);//nn変えたい
-    hazime.insertAdjacentElement('beforeend', p16);//nn変えたい
-    hazime.insertAdjacentElement('beforeend', p17);//nn変えたい
-    hazime.insertAdjacentElement('beforeend', p18);//nn変えたい
-    
-    
+    hazime.insertAdjacentElement('beforeend', h10);
+    hazime.insertAdjacentElement('beforeend', p11);
+    hazime.insertAdjacentElement('beforeend', p12);
+    hazime.insertAdjacentElement('beforeend', p13);
+    hazime.insertAdjacentElement('beforeend', p14);
+    hazime.insertAdjacentElement('beforeend', p15);
+    hazime.insertAdjacentElement('beforeend', p16);
+    hazime.insertAdjacentElement('beforeend', p17);
+    hazime.insertAdjacentElement('beforeend', p18);
     }
-    
-    
-    
-    
-    }
+}
 
 
 // 通信エラーが発生した時の処理
