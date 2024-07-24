@@ -1,6 +1,6 @@
 // ///////////////答え
 let kotae = Math.floor(Math.random()*10) + 1;
-//console.log('答え（デバッグ用）: ' + kotae);
+console.log('答え（デバッグ用）: ' + kotae);
 
 ///////////////////////入力回数（予想回数）
 let kaisu = 1;
@@ -17,26 +17,21 @@ c1.addEventListener('click', hantei);
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  
+  let m = document.querySelector('input[name="kaitou"]');
+  yoso = parseInt(m.value,10);
   let maru = document.querySelector('span#kaisu');
-  maru.textContent = kaisu;
   let squad = document.querySelector('span#answer');
-  squad.textContent = yoso;
+  maru.textContent = kaisu + '回目の予想: ' + yoso;
     if(kaisu>=4){
-        let result1 = document.querySelector('p#result');
-        result1.textContent ='答えは ' + kotae + ' でした．すでにゲームは終わっています';
-    }else if(kotae===4){
-        let result2 = document.querySelector('p#result');
-        result2.textContent ='正解です．おめでとう!';
+        squad.textContent ='答えは ' + kotae + ' でした．すでにゲームは終わっています';
+    }else if(kotae===yoso){
+        squad.textContent ='正解です．おめでとう!';
     }else if(kaisu===3){
-        let result3 = document.querySelector('p#result');
-        result3.textContent ='まちがい．残念でした答えは' + kotae + 'です．';
+        squad.textContent ='まちがい．残念でした答えは' + kotae + 'です．';
     }else if(kaisu<=2 && yoso<kotae){
-        let result4 = document.querySelector('p#result');
-        result4.textContent ='まちがい．答えはもっと大きいですよ';
-    }else if(kaisu<=2 && yoso>kotae){
-        let result5 = document.querySelector('p#result');
-        result5.textContent ='まちがい．答えはもっと小さいですよ';
+        squad.textContent ='まちがい．答えはもっと大きいですよ';
+    }else{
+        squad.textContent ='まちがい．答えはもっと小さいですよ';
     }
   kaisu++;
   // 課題3-1: 正解判定する
